@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .a{
+                border: 0px solid white;
+                width: 500px;
+                margin: auto;
+            }
+            button{
+                margin: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+       <button onclick="f1()">Show Date</button>
+        <div id="i1"></div>
+        <button onclick="f2()">Show Time</button>
+        <div id="i2"> </div>
+</div>
+        <script>
+            function f1(){
+                let d  = new Date();
+                var a=d.getDate()+"/"+(d.getUTCMonth()+1)+"/"+d.getFullYear();
+                document.getElementById('i1').innerHTML=a;
+            }
+            function f2()
+            {
+                let t= new Date();
+                document.getElementById('i2').innerHTML=t;
+            }
+        </script>
+    </body>
+</html>
